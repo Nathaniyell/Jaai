@@ -48,7 +48,7 @@ export function Footer() {
               <span>PO BOX 48173, Coon Rapids, MN 55448, USA</span>
             </li>
           </ul>
-          <div className="mt-4 flex items-center gap-3">
+          {/* <div className="mt-4 flex items-center gap-3">
             <Link href="#" aria-label="Visit JAI Network website" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
               <Globe size={16} />
             </Link>
@@ -58,7 +58,7 @@ export function Footer() {
             <Link href="#" aria-label="Send message to JAI Network" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
               <Send size={16} />
             </Link>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="border-t border-slate-200 py-4 text-center text-xs text-slate-500">
