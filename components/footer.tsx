@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Globe, Mail, MapPin, Phone, Send, Share2 } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 import { navItems } from "@/data/site";
 
