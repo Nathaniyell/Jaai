@@ -31,8 +31,15 @@ export default function TeamShowcase({ members }: TeamShowcaseProps) {
   const col3 = members.filter((_, i) => i % 3 === 2);
 
   return (
-    <div className="mx-auto flex w-full max-w-5xl select-none flex-col items-start gap-8 px-4 py-8 font-sans md:flex-row md:gap-10 md:px-6 lg:gap-14">
-      <div className="flex flex-shrink-0 gap-2 overflow-x-auto pb-1 md:gap-3 md:pb-0">
+    <>
+      <div className="mx-auto grid w-full max-w-2xl gap-4 px-4 py-8 md:hidden">
+        {members.map((member) => (
+          <MobileTeamCard key={member.id} member={member} />
+        ))}
+      </div>
+
+      <div className="mx-auto hidden w-full max-w-5xl select-none flex-col items-start gap-8 px-4 py-8 font-sans md:flex md:flex-row md:gap-10 md:px-6 lg:gap-14">
+        <div className="flex flex-shrink-0 gap-2 overflow-x-auto pb-1 md:gap-3 md:pb-0">
         <div className="flex flex-col gap-2 md:gap-3">
           {col1.map((member) => (
             <PhotoCard
@@ -74,6 +81,73 @@ export default function TeamShowcase({ members }: TeamShowcaseProps) {
         {members.map((member) => (
           <MemberRow key={member.id} member={member} hoveredId={hoveredId} onHover={setHoveredId} />
         ))}
+      </div>
+      </div>
+    </>
+  );
+}
+
+function MobileTeamCard({ member }: { member: TeamShowcaseMember }) {
+  const hasSocial = member.social?.twitter ?? member.social?.linkedin ?? member.social?.instagram ?? member.social?.behance;
+
+  return (
+    <div className="group relative h-[280px] overflow-hidden rounded-2xl border border-slate-200">
+      <img src={member.image} alt={member.name} className="h-full w-full object-cover" />
+
+      <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/25 to-transparent transition-opacity duration-300 group-hover:from-black/85 group-hover:via-black/45" />
+
+      <div className="absolute inset-x-0 bottom-0 p-4 text-white">
+        <p className="text-lg font-semibold leading-tight">{member.name}</p>
+        <p className="mt-1 text-xs uppercase tracking-[0.16em] text-white/80">{member.role}</p>
+
+        {hasSocial && (
+          <div className="mt-3 flex items-center gap-2 opacity-0 transition-all duration-300 group-hover:opacity-100">
+            {member.social?.twitter && (
+              <a
+                href={member.social.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-white/20 p-2 text-white backdrop-blur hover:bg-white/35"
+                aria-label={`${member.name} Twitter`}
+              >
+                <FaTwitter size={13} />
+              </a>
+            )}
+            {member.social?.linkedin && (
+              <a
+                href={member.social.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-white/20 p-2 text-white backdrop-blur hover:bg-white/35"
+                aria-label={`${member.name} LinkedIn`}
+              >
+                <FaLinkedinIn size={13} />
+              </a>
+            )}
+            {member.social?.instagram && (
+              <a
+                href={member.social.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-white/20 p-2 text-white backdrop-blur hover:bg-white/35"
+                aria-label={`${member.name} Instagram`}
+              >
+                <FaInstagram size={13} />
+              </a>
+            )}
+            {member.social?.behance && (
+              <a
+                href={member.social.behance}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-white/20 p-2 text-white backdrop-blur hover:bg-white/35"
+                aria-label={`${member.name} Behance`}
+              >
+                <FaBehance size={13} />
+              </a>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

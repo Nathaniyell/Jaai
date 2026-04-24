@@ -9,8 +9,8 @@ export function Footer() {
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
           <h3 className="text-lg font-bold text-[#0146AE]">JAI Network</h3>
-          <p className="mt-3 text-sm text-slate-600">
-            Empowering families, educators, and communities through autism awareness, inclusion, and practical support.
+          <p className="mt-3 text-sm text-slate-600 italic">
+            ...A Special Child, a Special Potential
           </p>
         </div>
 
