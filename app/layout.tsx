@@ -17,14 +17,14 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Jenneh Autism Awareness International (JAAI)",
+  title: "JAI Network",
   description: defaultSiteDescription,
   metadataBase: new URL("https://jaai.org"),
   openGraph: {
-    title: "Jenneh Autism Awareness International (JAAI)",
+    title: "JAI Network",
     description: defaultSiteDescription,
     url: "https://jaai.org",
-    siteName: "JAAI",
+    siteName: "JAI Network",
     locale: "en_US",
     type: "website",
   },

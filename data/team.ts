@@ -4,7 +4,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Jenneh Nyamah Kormoh",
     role: "Founder & Board Chair",
-    bio: "A seasoned social worker and humanitarian whose personal journey as a mother inspired JAAI. She provides strategic leadership and oversight, driving advocacy, inclusion, and stronger support systems for autistic children and families.",
+    bio: "A seasoned social worker and humanitarian whose personal journey as a mother inspired JAI Network. She provides strategic leadership and oversight, driving advocacy, inclusion, and stronger support systems for autistic children and families.",
     country: "United States",
     image: "/infographics/team-founder.png",
     featured: true,
@@ -19,7 +19,7 @@ export const teamMembers: TeamMember[] = [
   {
     name: "Sylvester Wahma",
     role: "Project Director",
-    bio: "A seasoned Liberian journalist and ICT specialist who oversees program strategy, communication, and implementation across JAAI initiatives.",
+    bio: "A seasoned Liberian journalist and ICT specialist who oversees program strategy, communication, and implementation across JAI Network initiatives.",
     country: "Sierra Leone",
     image: "/infographics/team-sylvester.png",
   },

@@ -16,7 +16,7 @@ export const Component = () => {
       year: "2021",
       title: "We make things simple",
       description:
-        "JAAI launched with a focused mission: clear, practical autism support and awareness for families and communities.",
+        "JAI Network launched with a focused mission: clear, practical autism support and awareness for families and communities.",
       icon: Flower2,
     },
     {
@@ -53,34 +53,16 @@ export const Component = () => {
           Our Journey So Far
         </h1>
         <p className="mx-auto mt-4 max-w-5xl text-justify text-lg text-zinc-800">
-          At Jenneh Autism Awareness International (JAAI), our journey has been
-          one of growth, impact, and transformation. From the United States to
-          Liberia, Nigeria, Sierra Leone, and Ghana, we have reached thousands
-          of families, educators, and caregivers with our awareness campaigns,
-          educational programs, and direct support initiatives.
+        Our journey has been one of growth, impact, and real transformation. From the United States to Liberia, Nigeria, Sierra Leone, and Ghana, we have reached thousands of families, educators, and caregivers with our awareness campaigns, educational programs, and direct support initiatives.
         </p>
         <p className="mx-auto mt-4 max-w-5xl text-justify text-lg text-zinc-800">
-          Through the Jenneh Autism Awareness Program (JAAP), we have empowered
-          over 5,000 individuals worldwide with knowledge about autism,
-          equipping them with the tools needed to support autistic children
-          effectively. Our Thanksgiving Basket Project has delivered essential
-          supplies to special needs homes and orphanages across 5 countries in
-          America and Africa, ensuring that children with autism receive the
-          care and resources they deserve.
+        Through the Jenneh Autism Awareness Program (JAAP), we have empowered over 5,000 individuals worldwide with knowledge about autism, equipping them with the tools needed to support autistic children effectively. Our Thanksgiving Basket Project has delivered essential supplies to special needs homes and orphanages across 5 countries in America and Africa, ensuring that children with autism receive the care and resources they deserve.
         </p>
         <p className="mx-auto mt-4 max-w-5xl text-justify text-lg text-zinc-800">
-          We have built strong partnerships with local organizations,
-          collaborated with dedicated caregivers, and engaged in advocacy
-          efforts to push for more inclusive policies and environments for
-          autistic individuals. Each step forward has been fueled by the
-          unwavering dedication of our team, supporters, and volunteers who
-          believe in a world where every child regardless of ability has the
-          opportunity to thrive
+        We have built strong partnerships with local organizations, collaborated with dedicated caregivers, and engaged in advocacy efforts to push for more inclusive policies and environments for autistic individuals. Each step forward has been fueled by the unwavering dedication of our team, supporters, and volunteers who believe in a world where every child regardless of ability has the opportunity to thrive.
         </p>
         <p className="mx-auto mt-4 max-w-5xl text-justify text-lg text-zinc-800">
-          Together, we will continue to transform lives, build stronger
-          communities, and create a future where every autistic individual is
-          valued, understood, and supported.
+        Together, we will continue to transform lives, build stronger communities, and create a future where every autistic individual is valued, understood, and supported.
         </p>
       </div>
 

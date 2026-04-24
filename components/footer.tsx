@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="border-t border-slate-200 bg-slate-50">
       <div className="mx-auto grid w-full max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
-          <h3 className="text-lg font-bold text-[#0146AE]">Jenneh Autism Awareness International</h3>
+          <h3 className="text-lg font-bold text-[#0146AE]">JAI Network</h3>
           <p className="mt-3 text-sm text-slate-600">
             Empowering families, educators, and communities through autism awareness, inclusion, and practical support.
           </p>
@@ -49,20 +49,20 @@ export function Footer() {
             </li>
           </ul>
           <div className="mt-4 flex items-center gap-3">
-            <Link href="#" aria-label="Visit JAAI website" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
+            <Link href="#" aria-label="Visit JAI Network website" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
               <Globe size={16} />
             </Link>
-            <Link href="#" aria-label="Share JAAI content" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
+            <Link href="#" aria-label="Share JAI Network content" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
               <Share2 size={16} />
             </Link>
-            <Link href="#" aria-label="Send message to JAAI" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
+            <Link href="#" aria-label="Send message to JAI Network" className="rounded-full bg-white p-2 text-[#0146AE] shadow-sm hover:bg-slate-100">
               <Send size={16} />
             </Link>
           </div>
         </div>
       </div>
       <div className="border-t border-slate-200 py-4 text-center text-xs text-slate-500">
-        {new Date().getFullYear()} Jenneh Autism Awareness International. All rights reserved.
+        {new Date().getFullYear()} JAI Network. All rights reserved.
       </div>
     </footer>
   );

@@ -15,7 +15,7 @@ import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata(
   "Home",
-  "JAAI supports autism awareness, inclusion, and caregiver empowerment.",
+  "JAI Network supports autism awareness, inclusion, and caregiver empowerment.",
 );
 
 export default function Home() {
@@ -29,21 +29,21 @@ export default function Home() {
         <div className="grid items-center gap-8 lg:grid-cols-2">
           <div>
             <p className="text-base text-slate-600 text-justify">
-              Jenneh Autism Awareness International (JAAI) is a United States-based non-governmental organization dedicated to promoting autism
-              awareness and supporting children with special needs and their families globally, with a special focus on Africa.
+            The JAI Network is a US-based non-governmental organization (NGO) dedicated to promoting autism awareness and supporting children with special needs and their families globally, with a special focus on Africa. The vision was initiated in 2021 by Jenneh Kormoh - an autism mum and passionate advocate for social and humanitarian services. Till date, JAI Network’s presence is actively felt in United States of America, Liberia, Nigeria, Sierra Leone, Ghana, Philippines and the India.
+
+
             </p>
             <p className="mt-4 text-base text-slate-600 text-justify">
-              Established in January 2021 by Jenneh Kormoh, JAAI operates in the United States, Liberia, Nigeria, Sierra Leone, and Ghana. We
-              bridge gaps in understanding, resources, and care through advocacy, education, and direct support programs.
+            We are guided by a passion for inclusivity and empowerment, striving to bridge gaps in understanding, resources, and care for autistic and special needs individuals. We leverage advocacy, education, child/tutor/parent empowerment and direct support programs to champion the right to dignity, respect, and quality of life for people living with autism and special needs.
             </p>
             <div className="mt-5">
-              <Link href="/about" aria-label="Read more about JAAI">
+            <Link href="/about" aria-label="Read more about JAI Network">
                 <Button variant="outline">Read More</Button>
               </Link>
             </div>
           </div>
           <div className="overflow-hidden rounded-3xl border border-slate-200 shadow-sm">
-            <Image src="/images/jai2.jpg" alt="JAAI community outreach" width={1200} height={1200} className="h-full w-full object-cover" />
+            <Image src="/images/jai2.jpg" alt="JAI Network community outreach" width={1200} height={1200} className="h-full w-full object-cover" />
           </div>
         </div>
       </SectionWrapper>

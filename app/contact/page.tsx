@@ -1,7 +1,7 @@
 import { Contact2 } from "@/components/contact-2";
 import { buildMetadata } from "@/lib/metadata";
 
-export const metadata = buildMetadata("Contact", "Get in touch with JAAI for inquiries, partnerships, and support.", "/contact");
+export const metadata = buildMetadata("Contact", "Get in touch with JAI Network for inquiries, partnerships, and support.", "/contact");
 
 export default function ContactPage() {
   return (

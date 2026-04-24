@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
-const siteName = "Jenneh Autism Awareness International";
+const siteName = "JAI Network";
 const siteUrl = "https://jaai.org";
 const description =
-  "Jenneh Autism Awareness International (JAAI) promotes autism awareness, inclusive education, and caregiver support across communities.";
+  "JAI Network promotes autism awareness, inclusive education, and caregiver support across communities.";
 
 export function buildMetadata(
   title: string,

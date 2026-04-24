@@ -5,7 +5,7 @@ import TeamShowcase, { type TeamShowcaseMember } from "@/components/team-showcas
 import { teamMembers } from "@/data/team";
 import { buildMetadata } from "@/lib/metadata";
 
-export const metadata = buildMetadata("Team", "Meet the leaders and country representatives behind JAAI's work.", "/team");
+export const metadata = buildMetadata("Team", "Meet the leaders and country representatives behind JAI Network's work.", "/team");
 
 export default function TeamPage() {
   const founder = teamMembers.find((member) => member.featured);
@@ -45,7 +45,7 @@ export default function TeamPage() {
         )}
       </SectionWrapper>
 
-      <SectionWrapper title="Our Team" subtitle="The wider team supporting JAAI programs across countries and communities.">
+      <SectionWrapper title="Our Team" subtitle="The wider team supporting JAI Network programs across countries and communities.">
         <TeamShowcase members={showcaseMembers} />
       </SectionWrapper>
     </>

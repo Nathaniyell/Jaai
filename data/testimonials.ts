@@ -6,7 +6,7 @@ export const testimonials: Testimonial[] = [
     role: "Parent",
     location: "Monrovia, Liberia",
     quote:
-      "Before JAAI, I felt alone and unsure how to support my son. Their caregiver sessions gave me practical strategies and confidence. Our home is calmer, and my child is thriving.",
+      "Before JAI Network, I felt alone and unsure how to support my son. Their caregiver sessions gave me practical strategies and confidence. Our home is calmer, and my child is thriving.",
   },
   {
     name: "Mr. Kwame A.",
@@ -20,21 +20,21 @@ export const testimonials: Testimonial[] = [
     role: "Caregiver",
     location: "Freetown, Sierra Leone",
     quote:
-      "JAAI made us feel seen. From awareness to follow-up support, they helped our family move from fear to informed action.",
+      "JAI Network made us feel seen. From awareness to follow-up support, they helped our family move from fear to informed action.",
   },
   {
     name: "David N.",
     role: "Volunteer",
     location: "Lagos, Nigeria",
     quote:
-      "Serving with JAAI showed me how powerful community education can be. Families now ask questions openly, and stigma is gradually reducing.",
+      "Serving with JAI Network showed me how powerful community education can be. Families now ask questions openly, and stigma is gradually reducing.",
   },
   {
     name: "Ruth C.",
     role: "Partner Organization Lead",
     location: "Coon Rapids, USA",
     quote:
-      "JAAI combines heart and execution. Their programs are culturally grounded, measurable, and deeply impactful for families and schools.",
+      "JAI Network combines heart and execution. Their programs are culturally grounded, measurable, and deeply impactful for families and schools.",
   },
 ];
 
@@ -42,7 +42,7 @@ export const impactStories: Story[] = [
   {
     title: "From Isolation to Inclusion",
     excerpt:
-      "A family-led advocacy effort supported by JAAI helped one school adopt autism-friendly classroom practices.",
+      "A family-led advocacy effort supported by JAI Network helped one school adopt autism-friendly classroom practices.",
     program: "School Inclusion Initiatives",
   },
   {

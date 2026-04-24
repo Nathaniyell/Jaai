@@ -142,7 +142,7 @@ export function AboutUsShowcase() {
             <Zap className="h-4 w-4" />
             OUR MISSION IN ACTION
           </span>
-          <h2 className="text-4xl font-light md:text-5xl">About JAAI</h2>
+          <h2 className="text-4xl font-light md:text-5xl">About JAI Network</h2>
           <div className="mx-auto mt-4 h-1 w-24 bg-[#0146AE]" />
           <p className="mx-auto mt-6 max-w-3xl text-slate-600">
             We combine advocacy, education, and direct support to ensure autistic children and their families receive
@@ -169,7 +169,7 @@ export function AboutUsShowcase() {
               <div className="overflow-hidden rounded-xl shadow-xl">
                 <Image
                   src="/images/jai9.jpg"
-                  alt="JAAI community support work"
+                  alt="JAI Network community support work"
                   width={1000}
                   height={1200}
                   className="h-full w-full object-cover"

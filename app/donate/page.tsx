@@ -5,7 +5,7 @@ import { SectionWrapper } from "@/components/section-wrapper";
 import { Button } from "@/components/ui/button";
 import { buildMetadata } from "@/lib/metadata";
 
-export const metadata = buildMetadata("Donate", "Support JAAI's programs with one-time or recurring donations.", "/donate");
+export const metadata = buildMetadata("Donate", "Support JAI Network's programs with one-time or recurring donations.", "/donate");
 
 const options = ["One-time Donation", "Monthly Giving", "In-kind Support", "Corporate Sponsorship"];
 
@@ -57,7 +57,7 @@ export default function DonatePage() {
         <div className="overflow-hidden rounded-3xl border border-slate-200 shadow-sm">
           <Image
             src="/infographics/why-donate.png"
-            alt="Why donate to JAAI infographic"
+            alt="Why donate to JAI Network infographic"
             width={1400}
             height={900}
             className="h-auto w-full"

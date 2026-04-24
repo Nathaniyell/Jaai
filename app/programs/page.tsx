@@ -4,7 +4,7 @@ import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata(
   "Programs",
-  "Explore JAAI's autism awareness, inclusion, and caregiver support programs.",
+  "Explore JAI Network's autism awareness, inclusion, and caregiver support programs.",
   "/programs",
 );
 

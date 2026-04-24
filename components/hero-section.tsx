@@ -117,13 +117,13 @@ export function HeroWithMockup({
 export function HeroSection() {
   return (
     <HeroWithMockup
-      title="JAAI Network"
+      title="JAI Network"
       description="A Special Child, A Special Potential. Building autism-friendly communities through awareness, inclusion, caregiver support, and practical action."
       primaryCta={{ text: "Donate Now", href: "/donate" }}
       secondaryCta={{ text: "Get Involved", href: "/get-involved", icon: <ArrowUpRight className="mr-2 h-4 w-4" /> }}
       mockupImage={{
         src: "/images/jai11.jpg",
-        alt: "JAAI hero community mockup",
+        alt: "JAI Network hero community mockup",
         width: 1400,
         height: 900,
       }}

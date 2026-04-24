@@ -36,7 +36,7 @@ export const programs: Program[] = [
     title: "School Inclusion Initiatives",
     summary: "Helping schools create autism-friendly learning environments.",
     description:
-      "JAAI partners with teachers and school leaders to improve inclusive policy, staff confidence, and classroom adaptations for learners with autism.",
+      "JAI Network partners with teachers and school leaders to improve inclusive policy, staff confidence, and classroom adaptations for learners with autism.",
     category: "Inclusion",
     countries: ["Ghana", "Sierra Leone"],
     impactMetric: "70+ schools supported",

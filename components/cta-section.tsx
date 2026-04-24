@@ -21,7 +21,7 @@ export function CTASection() {
           Your support helps families access life-changing autism resources, training, and community-based care.
         </p>
         <div className="mt-6 flex flex-wrap justify-center gap-3">
-          <Link href="/donate" aria-label="Donate to support JAAI impact">
+          <Link href="/donate" aria-label="Donate to support JAI Network impact">
             <Button variant="secondary">Donate</Button>
           </Link>
           <Link href="/get-involved" aria-label="Get involved through volunteering or partnership">
