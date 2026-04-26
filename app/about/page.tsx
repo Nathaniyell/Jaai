@@ -2,6 +2,7 @@ import { AboutUsShowcase } from "@/components/about-us-showcase";
 import { Component } from "@/components/journey-years-grid";
 import { buildMetadata } from "@/lib/metadata";
 import { CTASection } from "@/components/cta-section";
+import Partners from "@/components/partners";
 
 export const metadata = buildMetadata(
   "About",
@@ -40,7 +41,10 @@ JAI&apos;s intervention is unique because it bridges international expertise wit
         </div>
 
         <Component />
+        <div className="mt-10 lg:mt-24">
 
+<Partners />
+        </div>
         <CTASection />
     </>
   );
