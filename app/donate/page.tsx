@@ -35,7 +35,7 @@ export default function DonatePage() {
         <div>
           <h1 className="text-balance text-4xl font-semibold text-slate-900 lg:text-5xl">Give Today. Transform Autism Support Tomorrow.</h1>
           <p className="mt-4 text-base text-slate-600 md:text-lg">
-            Your generosity helps JAAI deliver awareness programs, caregiver training, and practical resources for children with autism and their
+            Your generosity helps JAI deliver awareness programs, caregiver training, and practical resources for children with autism and their
             families across countries and communities.
           </p>
         </div>
