@@ -18,7 +18,7 @@ export default function GetInvolvedPage() {
           description="Every contribution helps JAI Network expand autism awareness, family support services, and inclusive education."
           actions={[
             { text: "Volunteer", href: "/get-involved" },
-            { text: "Partner", href: "/partners" },
+            { text: "Partner", href: "/donate" },
             { text: "Donate", href: "/donate" },
           ]}
           orbitRadius={18}
