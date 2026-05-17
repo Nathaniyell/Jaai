@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <HeroSection />
 
-      <SectionWrapper className="relative z-20  px-3 pb-14 pt-0  sm:-mt-[7.25rem] md:-mt-[8rem] lg:-mt-[28rem] lg:pb-20">
+      <SectionWrapper className="relative z-20  px-3 pb-14 pt-0  sm:-mt-[7.25rem] md:-mt-[8rem] lg:-mt-[28rem] lg:pb-20 max-w-full">
         <div className="bg-white sm:bg-[#f2f2f2] p-5 sm:shadow-[0_-12px_40px_rgba(15,23,42,0.08)] sm:p-8 lg:p-10">
           <h2 className="text-balance text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">Who We Are</h2>
 

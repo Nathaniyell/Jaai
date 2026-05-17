@@ -68,7 +68,7 @@ export function HeroWithMockup({
     <section className={cn("relative overflow-hidden text-white", className)}>
       <HeroBackdropDecor />
 
-      <div className="relative mx-auto max-w-[1280px] px-4 sm:px-6 pt-8 sm:pt-0 lg:px-0 lg:pl-8">
+      <div className="relative mx-auto max-w-full px-4 sm:px-6 pt-8 sm:pt-0 lg:px-0 lg:pl-8">
         <div className="grid items-center gap-10 sm:pb-18 pt-[5.25rem] md:pb-32 md:pt-[6rem] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-8 lg:pb-36 lg:pt-[7rem]">
           <div className="relative z-10 max-w-xl lg:max-w-none">
             <h1 className="text-balance text-[1.65rem] text-center md:text-left font-normal leading-[1.42] tracking-tight text-white">
