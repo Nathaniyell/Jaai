@@ -23,14 +23,12 @@ export default function GetInvolvedPage() {
           ]}
           orbitRadius={18}
           avatars={[
-            { src: "/images/jai1.jpg", alt: "JAI Network community member 1" },
-            { src: "/images/jai2.jpg", alt: "JAI Network community member 2" },
-            { src: "/images/jai3.jpg", alt: "JAI Network community member 3" },
-            { src: "/images/jai4.jpg", alt: "JAI Network community member 4" },
-            { src: "/images/jai5.jpg", alt: "JAI Network community member 5" },
-            { src: "/images/jai6.jpg", alt: "JAI Network community member 6" },
-            { src: "/images/jai7.jpg", alt: "JAI Network community member 7" },
-            { src: "/images/jai8.jpg", alt: "JAI Network community member 8" },
+            { src: "/images/jai-kid.jpg", alt: "JAI Network community member 1" },
+            { src: "/images/jai-kid1.jpg", alt: "JAI Network community member 2" },
+            { src: "/images/jai-kid2.jpg", alt: "JAI Network community member 3" },
+            { src: "/images/jai.jpg", alt: "JAI Network community member 4" },
+            { src: "/images/real-jai.jpg", alt: "JAI Network community member 5" },
+            { src: "/images/jai-kid3.jpg", alt: "JAI Network community member 6" },         
           ]}
         />
       </div>

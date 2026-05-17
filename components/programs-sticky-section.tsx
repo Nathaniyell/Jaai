@@ -6,10 +6,10 @@ import Image from "next/image";
 import { programs } from "@/data/programs";
 
 const cardStyles = [
-  { bgColor: "bg-yellow-100", textColor: "text-zinc-700", image: "/images/jai1.jpg" },
-  { bgColor: "bg-green-100", textColor: "text-zinc-700", image: "/images/jai3.jpg" },
-  { bgColor: "bg-orange-100", textColor: "text-zinc-700", image: "/images/jai5.jpg" },
-  { bgColor: "bg-fuchsia-100", textColor: "text-zinc-700", image: "/images/jai8.jpg" },
+  { bgColor: "bg-yellow-100", textColor: "text-zinc-700", image: "/images/jaap.jpg" },
+  { bgColor: "bg-green-100", textColor: "text-zinc-700", image: "/images/tbp.jpg" },
+  { bgColor: "bg-orange-100", textColor: "text-zinc-700", image: "/images/workshop.jpg" },
+  { bgColor: "bg-fuchsia-100", textColor: "text-zinc-700", image: "/images/siinnitiative.jpg" },
 ];
 
 const useScrollAnimation = () => {

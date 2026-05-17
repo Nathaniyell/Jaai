@@ -6,7 +6,7 @@ export const teamMembers: TeamMember[] = [
     role: "Founder & Board Chair",
     bio: "A seasoned social worker and humanitarian whose personal journey as a mother inspired JAI Network. She provides strategic leadership and oversight, driving advocacy, inclusion, and stronger support systems for autistic children and families.",
     country: "United States",
-    image: "/infographics/team-founder.png",
+    image: "/images/jenneh.jpg",
     featured: true,
   },
   {

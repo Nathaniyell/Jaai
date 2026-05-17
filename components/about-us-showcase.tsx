@@ -4,7 +4,6 @@ import type React from "react";
 import Image from "next/image";
 import { useEffect, useRef } from "react";
 import {
-  ArrowRight,
   BookOpen,
   Calendar,
   CheckCircle,
@@ -168,17 +167,13 @@ export function AboutUsShowcase() {
             >
               <div className="overflow-hidden rounded-xl shadow-xl">
                 <Image
-                  src="/images/jai9.jpg"
+                  src="/images/jai.jpg"
                   alt="JAI Network community support work"
                   width={1000}
                   height={1200}
                   className="h-full w-full object-cover"
                 />
-                <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/50 to-transparent p-4 text-white">
-                  <button className="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-medium text-[#202e44]">
-                    Explore Our Impact <ArrowRight className="h-4 w-4" />
-                  </button>
-                </div>
+               
               </div>
               <div className="absolute -inset-3 -z-10 rounded-xl border-4 border-[#A9BBC8]" />
             </motion.div>

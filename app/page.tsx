@@ -26,25 +26,42 @@ export default function Home() {
     <>
       <HeroSection />
 
-      <SectionWrapper title="Who We Are">
-        <div className="grid items-center gap-8 lg:grid-cols-2">
-          <div>
-            <p className="text-base text-slate-600 text-justify">
-            The JAI Network is a US-based non-governmental organization (NGO) dedicated to promoting autism awareness and supporting children with special needs and their families globally, with a special focus on Africa. The vision was initiated in 2021 by Jenneh Kormoh - an autism mum and passionate advocate for social and humanitarian services. Till date, JAI Network’s presence is actively felt in United States of America, Liberia, Nigeria, Sierra Leone, Ghana, Philippines and the India.
+      <SectionWrapper className="relative z-20  px-3 pb-14 pt-0  sm:-mt-[7.25rem] md:-mt-[8rem] lg:-mt-[28rem] lg:pb-20">
+        <div className="bg-white sm:bg-[#f2f2f2] p-5 sm:shadow-[0_-12px_40px_rgba(15,23,42,0.08)] sm:p-8 lg:p-10">
+          <h2 className="text-balance text-5xl font-semibold tracking-tight text-slate-950 sm:text-6xl lg:text-7xl">Who We Are</h2>
 
+          <div className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
+            <div className="overflow-hidden rounded-[1.75rem] sm:border border-slate-200 bg-white sm:shadow-sm">
+              <Image
+                src="/images/cropped-jai.png"
+                alt="JAI Network community outreach"
+                width={1200}
+                height={1200}
+                className="h-full w-full object-cover"
+              />
+            </div>
 
-            </p>
-            <p className="mt-4 text-base text-slate-600 text-justify">
-            We are guided by a passion for inclusivity and empowerment, striving to bridge gaps in understanding, resources, and care for autistic and special needs individuals. We leverage advocacy, education, child/tutor/parent empowerment and direct support programs to champion the right to dignity, respect, and quality of life for people living with autism and special needs.
-            </p>
-            <div className="mt-5">
-            <Link href="/about" aria-label="Read more about JAI Network">
-                <Button variant="outline">Read More</Button>
-              </Link>
+            <div className="sm:border border-slate-200 bg-white sm:shadow-sm sm:p-8">
+              <p className="text-base leading-8 text-slate-700 md:text-lg">
+                The JAI Network is a US-based non-governmental organization (NGO) dedicated to promoting autism awareness and supporting children
+                with special needs and their families globally, with a special focus on Africa. The vision was initiated in 2021 by Jenneh Kormoh
+                - an autism mum and passionate advocate for social and humanitarian services. Till date, JAI Network&apos;s presence is actively
+                felt in United States of America, Liberia, Nigeria, Sierra Leone, Ghana, Philippines and India.
+              </p>
+              <p className="mt-6 text-base leading-8 text-slate-700 md:text-lg">
+                We are guided by a passion for inclusivity and empowerment, striving to bridge gaps in understanding, resources, and care for
+                autistic and special needs individuals. We leverage advocacy, education, child/tutor/parent empowerment and direct support
+                programs to champion the right to dignity, respect, and quality of life for people living with autism and special needs.
+              </p>
             </div>
           </div>
-          <div className="overflow-hidden rounded-3xl border border-slate-200 shadow-sm">
-            <Image src="/images/jai2.jpg" alt="JAI Network community outreach" width={1200} height={1200} className="h-full w-full object-cover" />
+
+          <div className="mt-8 flex sm:justify-center">
+            <Link href="/about" aria-label="Read more about JAI Network">
+              <Button className="rounded-full bg-[#FFC001] px-8 text-base font-semibold text-slate-950 shadow-sm hover:bg-[#e4ae00]">
+                Read more
+              </Button>
+            </Link>
           </div>
         </div>
       </SectionWrapper>
