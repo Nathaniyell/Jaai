@@ -1,7 +1,7 @@
 
 
 const Partners = () => {
-    const partners = ["Jones Foundation", "BROMCO", "Easy Collection"];
+    const partners = ["BROMCO", "Easy Collection"];
   return (
     <section className="border-y border-slate-200 bg-slate-50 py-12">
     <div className="mx-auto max-w-7xl px-6">

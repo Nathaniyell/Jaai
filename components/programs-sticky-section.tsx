@@ -7,8 +7,8 @@ import { programs } from "@/data/programs";
 
 const cardStyles = [
   { bgColor: "bg-yellow-100", textColor: "text-zinc-700", image: "/images/jaap.jpg" },
-  { bgColor: "bg-green-100", textColor: "text-zinc-700", image: "/images/tbp.jpg" },
-  { bgColor: "bg-orange-100", textColor: "text-zinc-700", image: "/images/workshop.jpg" },
+  { bgColor: "bg-green-100", textColor: "text-zinc-700", image: "/images/workshop.jpg" },
+  { bgColor: "bg-orange-100", textColor: "text-zinc-700", image: "/images/tbp.jpg" },
   { bgColor: "bg-fuchsia-100", textColor: "text-zinc-700", image: "/images/siinnitiative.jpg" },
 ];
 
@@ -74,10 +74,9 @@ export function ProgramsStickySection() {
                 return (
                   <div
                     key={program.slug}
-                    className={`${style.bgColor} sticky mb-16 grid grid-cols-1 items-center gap-4 rounded-3xl p-8 md:grid-cols-2 md:gap-8 md:p-12`}
-                    style={{ top: "160px" }}
+                    className={`${style.bgColor} relative mb-12 grid grid-cols-1 items-center gap-6 rounded-3xl p-8 md:sticky md:top-28 md:mb-16 md:grid-cols-2 md:gap-8 md:p-12 lg:top-36`}
                   >
-                    <div className="flex flex-col justify-center">
+                    <div className="order-2 flex flex-col justify-center md:order-1">
                       <p className="text-xs font-semibold uppercase tracking-wide text-[#0146AE]">{program.category}</p>
                       <h3 className="mb-3 mt-2 text-2xl font-bold text-gray-900 md:text-3xl">{program.title}</h3>
                       <p className={`${style.textColor} text-sm`}>{program.summary}</p>
@@ -85,13 +84,13 @@ export function ProgramsStickySection() {
                       <p className="mt-4 text-sm font-semibold text-[#0146AE]">{program.impactMetric}</p>
                     </div>
 
-                    <div className="mt-8 md:mt-0">
+                    <div className="order-1 md:order-2 md:mt-0">
                       <Image
                         src={style.image}
                         alt={program.title}
                         width={900}
                         height={600}
-                        className="h-auto w-full rounded-lg object-cover shadow-lg"
+                        className="aspect-[4/3] h-auto w-full rounded-lg object-cover shadow-lg md:aspect-auto"
                       />
                     </div>
                   </div>

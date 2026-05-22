@@ -141,11 +141,11 @@ export function AboutUsShowcase() {
             <Zap className="h-4 w-4" />
             OUR MISSION IN ACTION
           </span>
-          <h2 className="text-4xl font-light md:text-5xl">About JAI Network</h2>
+          <h2 className="text-4xl font-light md:text-5xl">Mission, Vision &amp; Values</h2>
           <div className="mx-auto mt-4 h-1 w-24 bg-[#0146AE]" />
           <p className="mx-auto mt-6 max-w-3xl text-slate-600">
-            We combine advocacy, education, and direct support to ensure autistic children and their families receive
-            the knowledge, resources, and community support they need to thrive.
+            We combine advocacy, education, and direct support to ensure autistic children and their families receive the
+            knowledge, resources, and community support they need to thrive.
           </p>
         </div>
 

@@ -20,21 +20,21 @@ export const Component = () => {
       icon: Flower2,
     },
     {
-      year: "2022",
+      year: "2024",
       title: "We focus on real results",
       description:
         "Our outreach scaled through awareness campaigns, helping caregivers and educators access actionable support tools.",
       icon: Sparkles,
     },
     {
-      year: "2023",
+      year: "2025",
       title: "We know what works",
       description:
         "Parent and caregiver workshops expanded, backed by proven approaches that improved confidence and care outcomes.",
       icon: Sun,
     },
     {
-      year: "2024",
+      year: "2026 - date",
       title: "With you all the way",
       description:
         "Cross-country delivery strengthened partnerships and ensured ongoing support systems for long-term impact.",

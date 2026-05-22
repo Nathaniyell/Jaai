@@ -8,6 +8,7 @@ import { cn } from "@/lib/utils";
 interface HeroWithMockupProps {
   title: string;
   description: string;
+  titleClassName?: string;
   primaryCta?: {
     text: string;
     href: string;
@@ -56,6 +57,7 @@ function HeroBackdropDecor({ className }: { className?: string }) {
 export function HeroWithMockup({
   title,
   description,
+  titleClassName,
   primaryCta = {
     text: "Donate Now",
     href: "/donate",
@@ -71,7 +73,7 @@ export function HeroWithMockup({
       <div className="relative mx-auto max-w-full px-4 sm:px-6 pt-8 sm:pt-0 lg:px-0 lg:pl-8">
         <div className="grid items-center gap-10 sm:pb-18 pt-[5.25rem] md:pb-32 md:pt-[6rem] lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-8 lg:pb-36 lg:pt-[7rem]">
           <div className="relative z-10 max-w-xl lg:max-w-none">
-            <h1 className="text-balance text-[1.65rem] text-center md:text-left font-normal leading-[1.42] tracking-tight text-white">
+            <h1 className={cn("text-balance text-[1.65rem] text-center md:text-left font-normal leading-[1.42] tracking-tight text-white", titleClassName)}>
               {title}
             </h1>
 
@@ -126,8 +128,9 @@ export function HeroWithMockup({
 export function HeroSection() {
   return (
     <HeroWithMockup
-      title="A Special Child, A Special Potential. Building autism-friendly communities through awareness, inclusion, caregiver support, and practical action."
-      description=""
+      title="A Special Child, A Special Potential..."
+      titleClassName="italic"
+      description="Building autism-friendly communities through awareness, inclusion, caregiver support, and practical action."
       primaryCta={{ text: "Donate Now", href: "/donate" }}
       secondaryCta={undefined}
       mockupImage={{
