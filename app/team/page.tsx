@@ -14,7 +14,7 @@ export default function TeamPage() {
     id: String(index + 1),
     name: member.name,
     role: member.role,
-    image: member.image ?? "/images/jai8.jpg",
+    image: member.image ?? "/images/jai.jpg",
     social: {
       linkedin: "#",
       twitter: index % 2 === 0 ? "#" : undefined,

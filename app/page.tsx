@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Cpu, Fingerprint, Pencil, Settings2, Sparkles, Zap } from "lucide-react";
-import { ReachStatsGrid } from "@/components/about-us-showcase";
+import { ReachStatsGrid } from "@/components/reach-stats-grid";
 import { CoreValuesSection } from "@/components/core-values-section";
 import { MissionVisionSection } from "@/components/mission-vision-section";
 import { CTASection } from "@/components/cta-section";
