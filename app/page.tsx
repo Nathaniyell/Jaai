@@ -32,7 +32,7 @@ export default function Home() {
           <div className="mt-6 grid gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-stretch">
             <div className="overflow-hidden rounded-[1.75rem] sm:border border-slate-200 bg-white sm:shadow-sm">
               <Image
-                src="/images/cropped-jai.png"
+                src="/images/workshop.jpg"
                 alt="JAI Network community outreach"
                 width={1200}
                 height={1200}
