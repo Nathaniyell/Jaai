@@ -1,64 +1,75 @@
-import { Settings2, Sparkles, Zap } from "lucide-react";
-import type { ReactNode } from "react";
+"use client";
 
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
+import { BookOpen, Heart, Leaf, Users } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 
-const coreValues = [
-  {
-    title: "Our Mission",
-    description:
-      "To raise global autism awareness and provide support systems for children with special needs and their families through education, advocacy, and community engagement.",
-    icon: Zap,
-  },
-  {
-    title: "Our Vision",
-    description:
-      "To create a world where individuals with autism and special needs are fully understood, accepted, and empowered to live fulfilling lives.",
-    icon: Settings2,
-  },
-  {
-    title: "Our Principles",
-    description:
-      "Inclusivity, empathy, education, collaboration, and sustainability remain at the center of every initiative we design and deliver.",
-    icon: Sparkles,
-  },
-] as const;
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { coreValues } from "@/data/about";
+
+const valueIcons: LucideIcon[] = [Users, Heart, BookOpen, Leaf];
 
 export function CoreValuesSection() {
   return (
-    <section className="bg-zinc-50 py-16 md:py-24">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="text-center">
-          <h2 className="text-balance text-4xl font-semibold text-slate-900 lg:text-5xl">Our Core Values</h2>
-          <p className="mt-4 text-slate-600">Our work is guided by inclusion, empathy, dignity, and community-driven action.</p>
+    <section className="bg-zinc-50 px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+      <div className="mx-auto max-w-6xl">
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-balance text-3xl font-semibold tracking-tight text-slate-900 md:text-4xl lg:text-5xl">
+            Our Core Values
+          </h2>
+          <p className="mt-4 text-base text-slate-600 sm:text-lg">
+            The principles that shape how we show up for autistic individuals, families, and communities every day.
+          </p>
         </div>
-        <div className="mx-auto mt-8 grid max-w-sm gap-6 md:mt-14 md:max-w-none md:grid-cols-3">
-          {coreValues.map((item) => (
-            <Card key={item.title} className="group shadow-black-950/5">
-              <CardHeader className="pb-3 text-center">
-                <CardDecorator>
-                  <item.icon className="size-6 text-[#0146AE]" aria-hidden />
-                </CardDecorator>
-                <h3 className="mt-6 text-lg font-semibold text-slate-900">{item.title}</h3>
-              </CardHeader>
-              <CardContent>
-                <p className="text-center text-sm text-slate-600">{item.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+
+        <div className="mt-12 hidden overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm md:block">
+        
+          {coreValues.map((value, index) => {
+            const Icon = valueIcons[index]!;
+
+            return (
+              <div
+                key={value.title}
+                className="grid grid-cols-[minmax(0,220px)_1fr] gap-6 border-b border-slate-200 px-6 py-5 last:border-b-0 transition hover:bg-slate-50/80"
+              >
+                <div className="flex items-start gap-3">
+                  <span className="mt-0.5 inline-flex rounded-md bg-[#0146AE]/10 p-2 text-[#0146AE]">
+                    <Icon className="h-4 w-4" aria-hidden />
+                  </span>
+                  <div>                   
+                    <h3 className="mt-1 font-semibold text-slate-900">{value.title}</h3>
+                  </div>
+                </div>
+                <p className="text-sm leading-relaxed text-slate-600 sm:text-base">{value.description}</p>
+              </div>
+            );
+          })}
         </div>
+
+        <Accordion
+          type="single"
+          collapsible
+          defaultValue={coreValues[0]?.title}
+          className="mt-12 w-full overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm md:hidden"
+        >
+          {coreValues.map((value, index) => {
+            const Icon = valueIcons[index]!;
+
+            return (
+              <AccordionItem key={value.title} value={value.title} className="border-slate-200 px-4">
+                <AccordionTrigger className="text-left text-base font-semibold text-slate-900 hover:no-underline">
+                  <span className="flex items-center gap-3">
+                    <span className="inline-flex rounded-md bg-[#0146AE]/10 p-2 text-[#0146AE]">
+                      <Icon className="h-4 w-4" aria-hidden />
+                    </span>
+                    {value.title}
+                  </span>
+                </AccordionTrigger>
+                <AccordionContent className="text-sm leading-relaxed text-slate-600">{value.description}</AccordionContent>
+              </AccordionItem>
+            );
+          })}
+        </Accordion>
       </div>
     </section>
-  );
-}
-
-function CardDecorator({ children }: { children: ReactNode }) {
-  return (
-    <div aria-hidden className="relative mx-auto size-28 [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)]">
-      <div className="absolute inset-0 bg-[linear-gradient(to_right,#000_1px,transparent_1px),linear-gradient(to_bottom,#000_1px,transparent_1px)] bg-[size:24px_24px] opacity-10" />
-      <div className="absolute inset-0 m-auto flex size-12 items-center justify-center border border-slate-300 bg-white">
-        {children}
-      </div>
-    </div>
   );
 }

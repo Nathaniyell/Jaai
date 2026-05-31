@@ -4,6 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 import type { Testimonial } from "@/types";
+import {User} from "lucide-react";
 
 type TestimonialsColumnProps = {
   className?: string;
@@ -26,11 +27,7 @@ export function TestimonialsColumn({ className, testimonials, duration = 14 }: T
                 <p className="text-sm text-slate-700">{item.quote}</p>
                 <div className="mt-5 flex items-center gap-3">
                   <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#0146AE]/10 text-sm font-semibold text-[#0146AE]">
-                    {item.name
-                      .split(" ")
-                      .slice(0, 2)
-                      .map((part) => part[0])
-                      .join("")}
+                    <User className="size-4 text-[#0146AE]" />
                   </div>
                   <div className="flex flex-col">
                     <p className="text-sm font-semibold leading-5 text-slate-900">{item.name}</p>

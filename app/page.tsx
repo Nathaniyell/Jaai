@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Cpu, Fingerprint, Pencil, Settings2, Sparkles, Zap } from "lucide-react";
 import { ReachStatsGrid } from "@/components/about-us-showcase";
 import { CoreValuesSection } from "@/components/core-values-section";
+import { MissionVisionSection } from "@/components/mission-vision-section";
 import { CTASection } from "@/components/cta-section";
 import { HeroSection } from "@/components/hero-section";
 import { SectionWrapper } from "@/components/section-wrapper";
@@ -64,6 +65,7 @@ export default function Home() {
         </div>
       </SectionWrapper>
 
+      <MissionVisionSection />
       <CoreValuesSection />
 
       <section className="bg-[#05070b] py-14 text-white md:py-20">

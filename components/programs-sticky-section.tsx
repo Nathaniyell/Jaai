@@ -6,7 +6,7 @@ import Image from "next/image";
 import { programs } from "@/data/programs";
 
 const cardStyles = [
-  { bgColor: "bg-yellow-100", textColor: "text-zinc-700", image: "/images/jaap.jpg" },
+  { bgColor: "bg-yellow-100", textColor: "text-zinc-700", image: "/images/program1.jpeg" },
   { bgColor: "bg-green-100", textColor: "text-zinc-700", image: "/images/workshop.jpg" },
   { bgColor: "bg-orange-100", textColor: "text-zinc-700", image: "/images/tbp.jpg" },
   { bgColor: "bg-fuchsia-100", textColor: "text-zinc-700", image: "/images/siinnitiative.jpg" },

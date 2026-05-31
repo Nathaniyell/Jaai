@@ -82,7 +82,7 @@ const counters = [
   { icon: <TrendingUp />, value: 5000, label: "Lives Impacted", suffix: "+" },
   { icon: <Globe2 />, value: 5, label: "Countries Reached", suffix: "+" },
   { icon: <Calendar />, value: 4, label: "Years of Service", suffix: "+" },
-  { icon: <Users />, value: 250, label: "Volunteers Mobilized", suffix: "+" },
+  { icon: <Users />, value: 250, label: "Volunteers Mobilized Across more than 5 countries", suffix: "+" },
 ];
 
 export function ReachStatsGrid() {

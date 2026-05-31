@@ -30,11 +30,11 @@ export default function TeamPage() {
             <div>
               <p className="text-xs font-semibold uppercase tracking-wide text-[#0146AE]">{founder.role}</p>
               <h2 className="mt-2 text-3xl font-bold text-slate-900">{founder.name}</h2>
-              <p className="mt-4 max-w-3xl text-slate-600">{founder.bio}</p>
+              <p className="mt-4 max-w-3xl text-slate-600 text-justify">{founder.bio}</p>
             </div>
             <div className="overflow-hidden rounded-2xl border border-slate-200 shadow-sm">
               <Image
-                src={founder.image ?? "/infographics/team-founder.png"}
+                src={founder.image ?? "/images/jenneh.jpg"}
                 alt={`${founder.name} founder spotlight`}
                 width={1200}
                 height={900}

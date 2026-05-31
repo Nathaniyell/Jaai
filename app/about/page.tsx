@@ -2,6 +2,7 @@ import { AboutHero } from "@/components/about-hero";
 import { CoreValuesSection } from "@/components/core-values-section";
 import { Component } from "@/components/journey-years-grid";
 import { KeyObjectivesSection } from "@/components/key-objectives-section";
+import { MissionVisionSection } from "@/components/mission-vision-section";
 import { buildMetadata } from "@/lib/metadata";
 import { CTASection } from "@/components/cta-section";
 import Partners from "@/components/partners";
@@ -16,6 +17,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero />
+      <MissionVisionSection />
       <KeyObjectivesSection />
       <CoreValuesSection />
       <div className="py-16 md:py-24">

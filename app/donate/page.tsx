@@ -13,7 +13,7 @@ export const metadata = buildMetadata(
   "/donate",
 );
 
-const whatsappDonateUrl = "https://wa.me/16124723780";
+const whatsappDonateUrl = "https://wa.me/+16124721228";
 
 export default function DonatePage() {
   const supportCards = [
