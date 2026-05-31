@@ -57,7 +57,9 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <Component />
+      <section className="px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
+        <Component />
+      </section>
       <div className="">
         <Partners />
       </div>

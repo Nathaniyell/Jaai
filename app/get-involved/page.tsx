@@ -1,6 +1,7 @@
 import { SectionWrapper } from "@/components/section-wrapper";
 import { OrbitingAvatarsCTA } from "@/components/orbiting-avatars-cta";
 import { buildMetadata } from "@/lib/metadata";
+import { whatsappDonateUrl } from "@/data/site";
 
 export const metadata = buildMetadata(
   "Get Involved",
@@ -17,8 +18,8 @@ export default function GetInvolvedPage() {
           title="Support Children, Support Families"
           description="Every contribution helps JAI Network expand autism awareness, family support services, and inclusive education."
           actions={[
-            { text: "Volunteer", href: "/get-involved" },
-            { text: "Partner", href: "/donate" },
+            { text: "Volunteer", href: whatsappDonateUrl },
+            { text: "Partner", href: whatsappDonateUrl },
             { text: "Donate", href: "/donate" },
           ]}
           orbitRadius={18}

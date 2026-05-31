@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { buildMetadata } from "@/lib/metadata";
 import Link from "next/link";
-// import Partners from "@/components/partners";
+import { whatsappDonateUrl } from "@/data/site";
 
 export const metadata = buildMetadata(
   "Donate",
@@ -13,7 +13,6 @@ export const metadata = buildMetadata(
   "/donate",
 );
 
-const whatsappDonateUrl = "https://wa.me/+16124721228";
 
 export default function DonatePage() {
   const supportCards = [
