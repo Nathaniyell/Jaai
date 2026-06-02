@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 const siteName = "JAI Network";
-const siteUrl = "https://jaai.org";
+const siteUrl = "https://jainetwork.org";
 const description =
   "JAI Network promotes autism awareness, inclusive education, and caregiver support across communities.";
 

@@ -19,11 +19,11 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "JAI Network",
   description: defaultSiteDescription,
-  metadataBase: new URL("https://jaai.org"),
+  metadataBase: new URL("https://jainetwork.org"),
   openGraph: {
     title: "JAI Network",
     description: defaultSiteDescription,
-    url: "https://jaai.org",
+    url: "https://jainetwork.org",
     siteName: "JAI Network",
     locale: "en_US",
     type: "website",

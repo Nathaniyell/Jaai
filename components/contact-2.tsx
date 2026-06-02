@@ -14,7 +14,7 @@ export function Contact2({
   description = "We are available for questions, feedback, or collaboration opportunities. Let us know how we can help!",
   phone = "(123) 34567890",
   email = "email@example.com",
-  web = { label: "jaai.org", url: "https://jaai.org" },
+  web = { label: "jainetwork.org", url: "https://jainetwork.org" },
 }: Contact2Props) {
   const phoneHref = `tel:${phone.replace(/\D/g, "")}`;
 
